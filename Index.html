@@ -3,7 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h3, h6, p {
+            margin: 10px 0;
+        }
+
+        #city-name {
+            font-size: 1.5em;
+        }
+
+        #weatherResult {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -11,10 +59,11 @@
         <button id="search-button">Search</button>
     </div>
     <div>
-        <h3 id ="city-name">Canada, Ontario-Toronto</h3>
+        <h3 id="city-name"></h3>
         <h6 id="city-time">localtime</h6>
         <p id="city-temp">13</p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
